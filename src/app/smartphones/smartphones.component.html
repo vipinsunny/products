@@ -1,0 +1,24 @@
+<div class="container col-md-12 mt-0">
+    <h1 class="text-center">Smart Phones (2)</h1>
+</div>
+<table class="table table-bordered" >
+  <thead class="table">
+    <tr>
+      <div class="form-check">
+      <th scope ="col" input class=" checkbox-main form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+    </div>
+      <th scope="col">Product name</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products; let i=index;">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        </div>
+      <td>{{product.product_name}}</td>
+      <td>{{product.price}}</td>
+    </tr>
+    <tr>
+  </tbody>
+</table>
